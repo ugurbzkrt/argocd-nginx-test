@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ugurbzkrt/nginx-argo
-  tag: "1.0"
+  tag: "latest"
   pullPolicy: Always
 
 service:
