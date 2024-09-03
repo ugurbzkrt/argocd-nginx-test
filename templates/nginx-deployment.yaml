@@ -4,11 +4,6 @@ metadata:
   name: {{ include "nginx-chart.fullname" . }}
   labels:
     app: {{ include "nginx-chart.name" . }}
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: uk-nginx=ugurbzkrt/nginx-argo
-    argocd-image-updater.argoproj.io/uk-nginx.update-strategy: latest
-    argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
